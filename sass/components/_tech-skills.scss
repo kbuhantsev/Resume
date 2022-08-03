@@ -1,4 +1,4 @@
-.section-soft-skills {
+.section-tech-skills {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -14,7 +14,8 @@
   }
 
   &__list {
-    list-style: disc;
+    @extend %list;
+
     position: relative;
     display: flex;
     flex-direction: column;
@@ -24,6 +25,8 @@
   }
 
   &__item {
-    display: list-item;
+    display: flex;
+    // flex-direction: column;
+    // row-gap: 10px;
   }
 }

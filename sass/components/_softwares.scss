@@ -1,0 +1,32 @@
+.section-softwares {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+
+  &__data {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    flex-grow: 1;
+    width: 70%;
+    padding-left: 30px;
+    padding-top: 30px;
+  }
+
+  &__list {
+    @extend %list;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding-left: 30px;
+  }
+
+  &__item {
+    display: flex;
+    // flex-direction: column;
+    // row-gap: 10px;
+  }
+}
