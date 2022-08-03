@@ -1,0 +1,18 @@
+.section-carieer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+
+  &__text {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  &__data {
+    flex-grow: 1;
+    width: 70%;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+}

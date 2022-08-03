@@ -1,46 +1,115 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Буханцев Константин</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/main.min.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container header-container">
-        <div class="header-photo">
-          <img class="header-photo__image" src="/" alt="Фото портрет" />
-        </div>
-        <div class="header-contacts">
-          <h1 class="header-contacts__name">Name Comes Here</h1>
-          <ul class="header-contacts__list">
-            <li class="header-contacts__item">99999 99999</li>
-            <li class="header-contacts__item">ouremailiccomeshere@gmail.com</li>
-            <li class="header-contacts__item">https://www.linkedin.com/yourlinkedin</li>
-            <li class="header-contacts__item">https://www.behance.net/yourbehance</li>
-          </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Буханцев Константин</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="header-photo">
+        <div class="header-photo__thumb">
+          <img class="header-photo__image" src="./images/photo-450@1x.jpg" alt="Фото портрет" />
         </div>
       </div>
-    </header>
-    <main class="main">
-      <div class="section">
-        <div class="container"></div>
+      <div class="header-contacts">
+        <h1 class="header-contacts__name">Name Comes Here</h1>
+        <ul class="header-contacts__list">
+          <li class="header-contacts__item">
+            <a href="tel:9999999999" class="header-contacts__ref">
+              <img src="./images/SVG/phone.svg" class="header-contacts__icon" width="21" height="21" />
+              99999 99999
+            </a>
+          </li>
+          <li class="header-contacts__item">
+            <a href="mailto:ouremailiccomeshere@gmail.com" class="header-contacts__ref">
+              <img src="./images/SVG/letter.svg" class="header-contacts__icon" width="21"
+                height="21" />ouremailiccomeshere@gmail.com</a>
+          </li>
+          <li class="header-contacts__item">
+            <a href="https://www.linkedin.com/" class="header-contacts__ref">
+              <img src="./images/SVG/linkedIn.svg" class="header-contacts__icon" width="21"
+                height="21" />https://www.linkedin.com/yourlinkedin</a>
+          </li>
+          <li class="header-contacts__item">https://www.behance.net/yourbehance</li>
+        </ul>
       </div>
-    </main>
-  </body>
+    </div>
+  </header>
+  <main class="main">
+    <!-- Section  carieer-->
+    <div class="section">
+      <div class="container">
+        <div class="section-carieer ">
+          <div class="section-top-border"></div>
+          <div class="section-label">
+            <span>CAREER OBJECTIVE</span>
+          </div>
+          <div class="section-carieer__data">
+            <span class="section-carieer__text">Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem
+              Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+              unknown printer took a galley of type and scrambled it to make a type specimen book.
+              It has survived not only five centuries.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section projects -->
+    <div class="section">
+      <div class="container">
+        <div class="section-projects">
+          <div class="section-top-border"></div>
+          <div class="section-label">
+            <span>CAREER OBJECTIVE</span>
+          </div>
+          <div class="section-projects__data">
+            <ul class="section-projects__list">
+              <li class="section-projects__item">
+                <span class="section-big-title">Project Name</span>
+                <span class="section-projects__description">To work in a challenging environment that would lead to the
+                  fulfillment of both corporate and personal goals where I can
+                  use all my experience in the field ofmultimedia, interaction design and graphics for the benefit of
+                  the organization.</span>
+                <div>
+                  <span><b>Behance Link:</b></span>
+                  <a href="behance.net/purplelane" class="section-projects__ref">behance.net/purplelane</a>
+                </div>
+              </li>
+              <li class="section-projects__item">
+                <span class="section-big-title">Project Name</span>
+                <span class="section-projects__description">To work in a challenging environment that would lead to the
+                  fulfillment of both corporate and personal goals where I can
+                  use all my experience in the field ofmultimedia, interaction design and graphics for the benefit of
+                  the organization.</span>
+                <div>
+                  <span><b>Behance Link:</b></span>
+                  <a href="behance.net/purplelane" class="section-projects__ref">behance.net/purplelane</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+</body>
+
 </html>

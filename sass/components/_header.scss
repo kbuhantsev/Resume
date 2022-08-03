@@ -1,38 +1,69 @@
-.header {
-}
-
 .header-container {
   display: flex;
   flex-direction: row;
   height: 250px;
+  margin-top: 10px;
+  margin-bottom: 50px;
 }
 
 .header-photo {
-  outline: 1px solid tomato;
   width: 30%;
 
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='350' height='262' viewBox='0 0 349 262'%3E%3Cpath style='stroke:none;fill-rule:nonzero;fill:%23302e2f;fill-opacity:1' d='M0 30.34766C0 13.58594 13.5664 0 30.30469 0H271.8828c14.10156 0 26.33985 9.74219 29.51953 23.5l46.57032 201.30469C352.37109 243.82813 337.94922 262 318.44922 262H30.30469C13.5664 262 0 248.41406 0 231.65234Zm0 0'/%3E%3C/svg%3E");
   background-size: contain;
   background-repeat: no-repeat;
 
+  &__thumb {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+
+    padding-top: 10px;
+  }
+
   &__image {
+    border-radius: 50%;
+    border: 5px solid white;
+    height: 220px;
+    width: 220px;
+    background-color: grey;
+    margin-left: 12%;
   }
 }
 .header-contacts {
-  outline: 1px solid tomato;
-  width: 70%;
+  width: 75%;
+
+  padding-top: 20px;
+  padding-left: 60px;
+
+  font-size: 18px;
+  color: $label-font-color;
 
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='850' height='260' viewBox='0 0 848 260'%3E%3Cpath style='stroke:none;fill-rule:nonzero;fill:%23302e2f;fill-opacity:1' d='M848 229.88281C848 246.51562 834.53125 260 817.91016 260H76.5703c-14 0-26.15234-9.66797-29.3125-23.32031L1.01953 36.91406C-3.34766 18.03516 10.97266 0 30.33203 0h787.57813C834.53125 0 848 13.48438 848 30.11719Zm0 0'/%3E%3C/svg%3E");
   background-size: contain;
   background-repeat: no-repeat;
 
   &__name {
+    font-size: 32px;
+    text-align: justify;
+    text-transform: uppercase;
+    margin-bottom: 10px;
   }
 
   &__list {
     @extend %list;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
   }
 
-  &__item {
+  &__ref {
+    @extend %link;
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    margin-right: 10px;
   }
 }
