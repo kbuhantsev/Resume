@@ -1,7 +1,5 @@
 .section-carieer {
-  position: relative;
-  display: flex;
-  flex-direction: row;
+  @include section;
 
   &__text {
     font-size: 16px;
@@ -9,10 +7,6 @@
   }
 
   &__data {
-    flex-grow: 1;
-    width: 70%;
-    padding-left: 30px;
     padding-bottom: 30px;
-    padding-top: 30px;
   }
 }

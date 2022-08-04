@@ -1,0 +1,33 @@
+@mixin section {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+
+  &__data {
+    flex-grow: 1;
+    width: 70%;
+    padding: {
+      left: 30px;
+      top: 30px;
+    }
+  }
+
+  &__list {
+    @extend %list;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    padding-left: 30px;
+    border-left: 3px solid $label-hover-color;
+  }
+
+  &:hover .section-label {
+    filter: invert(53%) sepia(0%) saturate(2%) hue-rotate(23deg) brightness(94%) contrast(90%);
+  }
+
+  &:hover .section-top-border {
+    background-color: grey;
+  }
+}

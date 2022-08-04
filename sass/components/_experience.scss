@@ -1,24 +1,8 @@
 .section-experience {
-  position: relative;
-  display: flex;
-  flex-direction: row;
+  @include section;
 
   &__data {
-    flex-grow: 1;
-    width: 70%;
     padding-left: 100px;
-    padding-top: 30px;
-  }
-
-  &__list {
-    @extend %list;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-
-    padding-left: 30px;
-    border-left: 3px solid #302e2f;
   }
 
   &__item {
@@ -31,9 +15,9 @@
       position: absolute;
       left: -42px;
       content: '';
-      border: 3px solid #302e2f;
-      background-color: $section-bg-color;
+      border: 3px solid $label-hover-color;
       border-radius: 50%;
+      background-color: white;
       height: 20px;
       width: 20px;
     }
