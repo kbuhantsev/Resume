@@ -181,6 +181,7 @@ img {
 .header-contacts__name {
   font-size: 32px;
   text-align: justify;
+  font-style: normal;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
@@ -479,7 +480,7 @@ img {
       -ms-flex-positive: 1;
           flex-grow: 1;
   width: 70%;
-  padding-left: 30px;
+  padding-left: 100px;
   padding-top: 30px;
 }
 .section-experience__list {
@@ -496,6 +497,7 @@ img {
   border-left: 3px solid #302e2f;
 }
 .section-experience__item {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -507,11 +509,16 @@ img {
 }
 .section-experience__item::before {
   position: absolute;
-  left: -12px;
+  left: -42px;
   content: "";
   border: 3px solid #302e2f;
   background-color: white;
   border-radius: 50%;
   height: 20px;
   width: 20px;
+}
+.section-experience__date {
+  position: absolute;
+  -webkit-transform: translate(-125px, 3px);
+          transform: translate(-125px, 3px);
 }/*# sourceMappingURL=main.css.map */
