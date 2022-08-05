@@ -76,6 +76,12 @@ img {
   top: 0;
   height: 3px;
   background-color: #302e2f;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-label {
@@ -91,6 +97,14 @@ img {
   padding-top: 20px;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='350' height='85' viewBox='0 0 348 85'%3E%3Cpath style='stroke:none;fill-rule:nonzero;fill:%23302e2f;fill-opacity:1' d='M0 64.762C0 75.937 9.059 85 20.234 85h274.329a20.23 20.23 0 0 0 16.304-8.258l32.695-44.523C353.375 18.852 343.837 0 327.255 0H20.234C9.06 0 0 9.063 0 20.238Zm0 0'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
+  -webkit-transition-property: -webkit-filter;
+  transition-property: -webkit-filter;
+  transition-property: filter;
+  transition-property: filter, -webkit-filter;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-label-text {
   position: absolute;
@@ -152,8 +166,13 @@ img {
 .section-projects__ref, .header-contacts__ref {
   text-decoration: none;
   color: inherit;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: white;
+  -webkit-transition-property: color, fill;
+  transition-property: color, fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-projects__ref:hover, .header-contacts__ref:hover, .section-projects__ref:focus, .header-contacts__ref:focus {
   color: grey;

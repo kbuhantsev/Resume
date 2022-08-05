@@ -25,7 +25,14 @@
 %link {
   text-decoration: none;
   color: inherit;
-  transition: color 250ms $cubic-bezier;
+  fill: white;
+
+  transition: {
+    property: color, fill;
+    duration: 250ms;
+    timing-function: $cubic-bezier;
+  }
+
   &:hover,
   &:focus {
     color: grey;
