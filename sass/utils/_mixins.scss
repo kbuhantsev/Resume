@@ -1,3 +1,9 @@
+/*
+|========================================
+| section
+|========================================
+*/
+
 @mixin section {
   position: relative;
   display: flex;
@@ -30,4 +36,14 @@
   &:hover .section-top-border {
     background-color: grey;
   }
+}
+
+/*
+|========================================
+| flex-basis
+|========================================
+*/
+
+@mixin flex-basis($items, $gap: 30px) {
+  flex-basis: calc((100% - $gap * ($items - 1)) / $items);
 }

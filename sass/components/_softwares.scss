@@ -3,9 +3,33 @@
 
   &__list {
     border-left: none;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   &__item {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    @include flex-basis(5);
+
+    &:hover .section-softwares__img {
+      transform: scale(1.2);
+    }
+  }
+
+  &__thumb {
+    max-width: 96px;
+  }
+
+  &__img {
+    transition: transform 250ms $cubic-bezier;
+  }
+
+  &__title {
+    display: flex;
+    flex-grow: 1;
+    padding-top: 5px;
   }
 }
