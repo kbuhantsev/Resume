@@ -464,6 +464,41 @@ img {
 .section-projects:hover .section-top-border {
   background-color: grey;
 }
+.section-projects__thumb {
+  position: relative;
+  margin-bottom: 30px;
+}
+.section-projects__thumb:after {
+  pointer-events: none;
+  content: "";
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  opacity: 0;
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.section-projects__thumb:hover:after {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  background-image: linear-gradient(45deg, rgb(246, 246, 246), rgb(240, 240, 240));
+  opacity: 0.25;
+}
+.section-projects__image {
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.section-projects__image:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
 .section-education {
   position: relative;
   display: -webkit-box;
